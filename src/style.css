@@ -1,0 +1,43 @@
+/* CSS of Menu-Enhanced */
+
+.menu-container {
+  background-color: #3e5cca;
+  padding: 0 40px;
+  font-size: 0;
+  margin: 0 auto;
+}
+
+.menu-container .menu-list {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  display: inline-block;
+}
+.menu-container .menu-list:first-child {
+  border-left: none;
+}
+.menu-container .menu-list:last-child {
+  border-right: none;
+}
+
+.menu-container .menu-list a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 15px 50px;
+  font-size: 1rem;
+}
+.menu-container .menu-list:nth-child(1) a::after,
+.menu-container .menu-list:nth-child(2) a::after,
+.menu-container .menu-list:nth-child(7) a::after {
+  margin-left: 8px;
+  content: "\25B6";
+  font-size: 0.7rem;
+  display: inline-block;
+  transform: rotate(90deg);
+}
+.menu-container .menu-list a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(36, 118, 241);
+  box-shadow: 0px 5px 30px rgba(54, 54, 54, 0.5);
+  font-weight: bold;
+}
